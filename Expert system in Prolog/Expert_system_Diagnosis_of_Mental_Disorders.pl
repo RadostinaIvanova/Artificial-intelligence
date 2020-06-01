@@ -63,60 +63,60 @@ behavior(X) :- questionWithPossibilities(behavior, X, [repetitive_and_restricted
 
 
 disorder(anorexia_nervosa) :- type(eating_disorder),
-    						 consequence(low_weight),
-    						 food_amount(food_restriction).
+    			      consequence(low_weight),
+    			      food_amount(food_restriction).
 
 disorder(bulimia_nervosa) :- type(eating_disorder),
     						 consequence(purging),
     						 food_amount(binge_eating).
 
 disorder(asperger_syndrome) :- type(neurodevelopmental_disorder), 
-   							   specialty(psychiatry),
-    						   social_skill(low), 
-    						   behavior(repetitive_and_restricted).
+   			       specialty(psychiatry),
+    			       social_skill(low), 
+    			       behavior(repetitive_and_restricted).
 
 disorder(dyslexia) :- type(neurodevelopmental_disorder), 
-    						   social_skill(normal), 
-    						   perceptions(low),
-    						   symptom(trouble_reading).
+    		      social_skill(normal), 
+    		      perceptions(low),
+    		     symptom(trouble_reading).
 
 disorder(autism) :- type(neurodevelopmental_disorder), 
-    				social_skill(low), 
-    				symptom(impaired_communication).
+    		    social_skill(low), 
+    		    symptom(impaired_communication).
     						   
 
 disorder(tourettes_syndrome) :- type(neurodevelopmental_disorder), 
-    						    social_skill(normal), 
-   							    specialty(neurology),
-    						    symptom(motor_tics).
+    			        social_skill(normal), 
+   				specialty(neurology),
+    				symptom(motor_tics).
 	
 disorder(bipolar_disorder) :- type(psychotic_disorder),
-    			              indication(elevated_moods).
+    			      indication(elevated_moods).
 
 disorder(schizophrenia) :- type(psychotic_disorder),
-    						  indication(hallucinations).
+    			   indication(hallucinations).
 
 disorder(down_syndrome) :- type(genetic_disorder),
-    						 symptom(delayed_physical_growth),
-    						 face_features(long_and_narrow),
-    						 ears_features(large),
-    						 brain_function(intellectual_disability).
+    			   symptom(delayed_physical_growth),
+    			   face_features(long_and_narrow),
+    			   ears_features(large),
+    			   brain_function(intellectual_disability).
 
 disorder(fragile_X_syndrome) :- type(genetic_disorder),
-     							face_features(small_chin_and_slanted_eyes),
-   							    brain_function(intellectual_disability).
+     				face_features(small_chin_and_slanted_eyes),
+   				brain_function(intellectual_disability).
     
     
 type(eating_disorder) :- symptom(abnormal_eating_habits),
-    					 mentality(strong_desire_to_be_thin).
+    			 mentality(strong_desire_to_be_thin).
 
 type(neurodevelopmental_disorder) :-  condition(affected_nervous_system), 
-    								  brain_function(abnormal),
-    								  cause(genetic_and_enviromental).
+    			     	      brain_function(abnormal),
+    				      cause(genetic_and_enviromental).
 
 type(psychotic_disorder) :- symptom(false_beliefs),
-    						mentality(manic_depressive),
-    						cause(genetic_and_enviromental).
+    			    mentality(manic_depressive),
+    			    cause(genetic_and_enviromental).
 
 type(genetic_disorder) :- cause(abnormalities_in_genome).
 
