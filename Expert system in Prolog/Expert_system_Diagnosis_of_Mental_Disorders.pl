@@ -67,8 +67,8 @@ disorder(anorexia_nervosa) :- type(eating_disorder),
     			      food_amount(food_restriction).
 
 disorder(bulimia_nervosa) :- type(eating_disorder),
-    						 consequence(purging),
-    						 food_amount(binge_eating).
+    			     consequence(purging),
+    	        	     food_amount(binge_eating).
 
 disorder(asperger_syndrome) :- type(neurodevelopmental_disorder), 
    			       specialty(psychiatry),
@@ -78,7 +78,7 @@ disorder(asperger_syndrome) :- type(neurodevelopmental_disorder),
 disorder(dyslexia) :- type(neurodevelopmental_disorder), 
     		      social_skill(normal), 
     		      perceptions(low),
-    		     symptom(trouble_reading).
+    		      symptom(trouble_reading).
 
 disorder(autism) :- type(neurodevelopmental_disorder), 
     		    social_skill(low), 
